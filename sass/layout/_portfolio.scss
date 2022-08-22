@@ -1,0 +1,128 @@
+.btn-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio__list-btn {
+  margin-bottom: 50px;
+}
+
+.btn-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn-list__button {
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 0cm;
+
+  transition: color var(--trans-accent), background var(--trans-accent),
+    box-shadow var(--trans-accent);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-accent-page-color);
+    background: #2196f3;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.btn-list__button.btn-list_active {
+  background-color: var(--accent-page-color);
+  color: var(--secondary-accent-page-color);
+}
+
+.portfolio-item__container {
+  border: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.portfolio__about-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-item {
+  width: 370px;
+  background: #ffffff;
+}
+.portfolio-item__link {
+  display: block;
+  transition: box-shadow var(--trans-accent);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio-item__title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-page-color);
+}
+
+.portfolio-item__text {
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--secondary-page-color);
+}
+
+.portfolio-item__development {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item__overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  transform: translate(0, 100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--secondary-accent-page-color);
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  .portfolio-item__link:hover &,
+  .portfolio-item__link:focus & {
+    transform: translate(0, 0);
+  }
+}
