@@ -37,11 +37,15 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
+
+        <!-- кнопка відкр. моб. меню -->
+        <button type="button" class="mobile-menu-open" data-menu-open>
           <svg class="mobile-menu-open__icon" width="40" height="40">
             <use href="./images/sprite.svg.svg#burger"></use>
           </svg>
         </button>
+        <!-- / / / / /  -->
+
         <ul class="contacts-list header__list">
           <li class="contacts-item list">
             <a class="contacts-link link" href="mailto:info@devstudio.com">
@@ -63,10 +67,10 @@
       </div>
 
       <!-- мобільне меню -->
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <!-- кнопка закриття моб.меню -->
-          <button type="button" class="mobile-menu__close-button">
+          <button type="button" class="mobile-menu__close-button" data-menu-close>
             <svg class="mobile-menu__close-icon" width="40" height="40">
               <use href="./images/sprite.svg.svg#icon-close-btn"></use>
             </svg>
@@ -721,6 +725,8 @@
         </form>
       </div>
     </div>
+    
     <script src="./js/modal.js"></script> -->
+    <script href="./js/mobile-menu.js"></script>
   </body>
 </html>
