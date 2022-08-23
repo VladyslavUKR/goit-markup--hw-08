@@ -91,7 +91,9 @@ body {
   z-index: 1000;
   width: 100%;
   height: 100%;
+  max-height: 796px;
   background-color: #fff;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -176,7 +178,16 @@ body {
 
 .mobile-munu__social-list {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+}
+
+.mobile-menu__social-item:not(:first-child)::before {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  width: 22px;
+  height: 0;
+  margin-right: 10px;
 }
 
 .mobile-menu__social-link {
@@ -185,13 +196,6 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-
-.mobile-phone__decor-line::before {
-  content: "";
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-  margin-right: 10px;
 }
 
 .backdrop {
