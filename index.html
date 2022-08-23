@@ -37,6 +37,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open">
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./images/sprite.svg.svg#burger"></use>
+          </svg>
+        </button>
         <ul class="contacts-list header__list">
           <li class="contacts-item list">
             <a class="contacts-link link" href="mailto:info@devstudio.com">
@@ -56,27 +61,104 @@
           </li>
         </ul>
       </div>
+
+      <!-- мобільне меню -->
+      <div class="mobile-menu">
+        <div class="container mobile-menu__container">
+          <!-- кнопка закриття моб.меню -->
+          <button type="button" class="mobile-menu__close-button">
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+
+          <!-- сторінки -->
+          <ul class="mobile-menu__pages-list list">
+            <li class="mobile-menu__pages-item">
+              <a class="mobile-menu__pages-link mobile-menu--active link" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu__pages-item">
+              <a class="mobile-menu__pages-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__pages-item">
+              <a class="mobile-menu__pages-link link" href="">Контакты</a>
+            </li>
+          </ul>
+
+          <!-- Контакти -->
+          <ul class="mobile-menu__contacts-list header__list">
+            <li class="mobile-menu__contacts-item list">
+              <a
+                class="mobile-menu__contacts-link mobile-menu__contacts-link_blue link"
+                href="tel:+380961111111"
+              >
+                +380961111111</a
+              >
+            </li>
+
+            <li class="mobile-menu__contacts-item list">
+              <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <!-- посилання на соц мережі -->
+          <ul class="mobile-munu__social-list">
+            <li class="mobile-menu__social-item list">
+              <a href="https://www.instagram.com/" class="mobile-menu__social-link link" lang="en"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__social-item list">
+              <a
+                href="https://twitter.com/login"
+                class="mobile-menu__social-link mobile-phone__decor-line link"
+                lang="en"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu__social-item list">
+              <a
+                href="https://m.facebook.com/"
+                class="mobile-menu__social-link mobile-phone__decor-line link"
+                lang="en"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu__social-item list">
+              <a
+                href="https://www.linkedin.com/"
+                class="mobile-menu__social-link mobile-phone__decor-line link"
+                lang="en"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- MAIN -->
     <main>
       <!--HERO-->
-      <section class="hero section">
+      <!-- <section class="hero section">
         <div class="container">
           <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <button class="model-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section>
+      </section> -->
 
-      <!--  advantages -->
-      <section class="advantages section">
+      <!-- * advantages -->
+      <!-- <section class="advantages section">
         <div class="container">
           <h2 class="advantages-main-title">Преимущества компании</h2>
 
           <ul class="advantages-list">
-            <li class="advantages-item list">
-              <!-- підкл SVG -->
-              <div class="advantages-svg">
+            <li class="advantages-item list"> -->
+      <!-- !підкл SVG -->
+      <!-- <div class="advantages-svg">
                 <svg class="icon-section" width="70" height="70">
                   <use href="./images/sprite.svg.svg#icon-antenna"></use>
                 </svg>
@@ -124,10 +206,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- ABOUT -->
-      <section class="about section">
+      <!-- !ABOUT -->
+      <!-- <section class="about section">
         <div class="container">
           <h2 class="section-title-about">Чем мы занимаемся</h2>
           <ul class="about-list">
@@ -198,10 +280,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- EMPLOYEES -->
-      <section class="employees section">
+      <!-- !EMPLOYEES -->
+      <!-- <section class="employees section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="employees-list">
@@ -427,10 +509,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- customers -->
-      <section class="customers section">
+      <!-- !customers -->
+      <!-- <section class="customers section">
         <div class="container">
           <h2 class="customers-title">Постоянные клиенты</h2>
           <ul class="customers-list list">
@@ -478,11 +560,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <!-- footer -->
-    <footer class="footer">
+    <!--! footer -->
+    <!-- <footer class="footer">
       <div class="footer__menu container">
         <div class="footer__inform">
           <a class="logotype link" href="./index.html" lang="en"
@@ -508,10 +590,10 @@
               </li>
             </ul>
           </address>
-        </div>
+        </div> -->
 
-        <!-- media footer -->
-        <div class="invitation">
+    <!-- !media footer -->
+    <!-- <div class="invitation">
           <h3 class="invitation__title">присоединяйтесь</h3>
           <ul class="soc-list list">
             <li class="soc-list__item">
@@ -561,18 +643,18 @@
           </button>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
-    <!-- MODAL WINDOW -->
-    <div class="backdrop is-hidden" data-modal>
+    <!--! MODAL WINDOW -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="18" height="18">
             <use href="./images/sprite.svg.svg#icon-close-btn"></use>
           </svg>
-        </button>
-        <!-- MODAL FORM  -->
-        <form class="modal-form">
+        </button> -->
+    <!-- !MODAL FORM  -->
+    <!-- <form class="modal-form">
           <p class="modal-form-text">Оставьте свои данные, мы вам перезвоним</p>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Имя</span>
@@ -639,6 +721,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>
