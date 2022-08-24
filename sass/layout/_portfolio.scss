@@ -13,11 +13,18 @@
 
 .btn-list {
   display: flex;
-  justify-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+  row-gap: 15px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 362px;
+  }
+  // justify-content: center;
 }
 
 .portfolio__list-btn {
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 .btn-list__item:not(:last-child) {
@@ -66,11 +73,13 @@
 .portfolio__about-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  row-gap: 30px;
+
+  // gap: 30px;
 }
 
 .portfolio-item {
-  width: 370px;
+  max-width: 450px;
   background: #ffffff;
 }
 .portfolio-item__link {

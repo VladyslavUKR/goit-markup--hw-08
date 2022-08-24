@@ -13,7 +13,7 @@
   border-radius: 4px;
 }
 
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -31,10 +31,10 @@
   cursor: pointer;
 }
 
-.modal-close-btn-icon {
+.modal__close-btn-icon {
   transition: fill var(--trans-accent);
 
-  .modal-close-btn:focus & {
+  .modal__close-btn:focus & {
     fill: var(--accent-page-color);
   }
 
