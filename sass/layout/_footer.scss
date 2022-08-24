@@ -1,7 +1,12 @@
 .footer__menu {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .footer {
@@ -35,8 +40,17 @@
   color: var(--accent-page-color);
 }
 
+@media screen and (max-width: 767px) {
+  .address__list {
+    margin-bottom: 60px;
+  }
+}
+
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__contact {
@@ -52,9 +66,13 @@
 
 .address__contact_white {
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
 
-  color: #fff;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
 }
 
 .soc-list {
@@ -62,6 +80,13 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 767px) {
+  .soc-list--under_space {
+    margin-bottom: 60px;
+  }
+}
+
 .invitation__title {
   margin-bottom: 20px;
   font-size: 14px;
@@ -104,7 +129,7 @@
 }
 
 .subscription__input {
-  width: 358px;
+  width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -123,6 +148,10 @@
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
   }
 }
 

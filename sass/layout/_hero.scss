@@ -6,12 +6,27 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 480px;
 
     max-width: 1600px;
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
     margin: 0 auto;
+  }
+
+  .hero__title {
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #ffffff;
   }
 }
 
@@ -21,78 +36,68 @@
   screen and (min-resolution: 2dppx) and(max-width: 767px) {
   .hero {
     background-image: url('../../images/phone/header_phone@2x.jpg');
-    background-color: #2f303a;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    max-width: 1600px;
-    text-align: center;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    margin: 0 auto;
   }
 }
 
 // !TABLET
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/tablet/header_tablet.jpg');
-  }
-}
+// @media screen and (min-width: 768px) {
+//   .hero {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url('../../images/tablet/header_tablet.jpg');
+//   }
+// }
 
-@media screen and (min-device-pixel-ratio: 2) and(min-width: 768px),
-  screen and (min-resolution: 192dpi) and(min-width: 768px),
-  screen and (min-resolution: 2dppx) and(min-width: 768px) {
-  .hero {
-    background-image: url('../../images/tablet/header_tablet@2x.jpg');
-    background-color: #2f303a;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+// @media screen and (min-device-pixel-ratio: 2) and(min-width: 768px),
+//   screen and (min-resolution: 192dpi) and(min-width: 768px),
+//   screen and (min-resolution: 2dppx) and(min-width: 768px) {
+//   .hero {
+//     background-image: url('../../images/tablet/header_tablet@2x.jpg');
+//     background-color: #2f303a;
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
 
-    max-width: 1600px;
-    text-align: center;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    margin: 0 auto;
-  }
-}
+//     max-width: 1600px;
+//     text-align: center;
+//     padding-top: 118px;
+//     padding-bottom: 118px;
+//     margin: 0 auto;
+//   }
+// }
 
 // !DESKTOP
 
-@media screen and (min-width: 1200px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/desktop/header_desktop.jpg');
-  }
-}
+// @media screen and (min-width: 1200px) {
+//   .hero {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url('../../images/desktop/header_desktop.jpg');
+//   }
+// }
 
-@media screen and (min-device-pixel-ratio: 2) and(min-width: 1200px),
-  screen and (min-resolution: 192dpi) and(min-width: 1200px),
-  screen and (min-resolution: 2dppx) and(min-width: 1200px) {
-  .hero {
-    background-image: url('../../images/desktop/header_desktop@2x.jpg');
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
+// @media screen and (min-device-pixel-ratio: 2) and(min-width: 1200px),
+//   screen and (min-resolution: 192dpi) and(min-width: 1200px),
+//   screen and (min-resolution: 2dppx) and(min-width: 1200px) {
+//   .hero {
+//     background-image: url('../../images/desktop/header_desktop@2x.jpg');
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//   }
+// }
 
-.hero-title {
-  width: 696px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+// .hero__title {
+//   width: 696px;
+//   margin-bottom: 30px;
+//   margin-left: auto;
+//   margin-right: auto;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--secondary-accent-page-color);
-}
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   color: var(--secondary-accent-page-color);
+// }
 .model-btn {
   transition: background var(--trans-accent), box-shadow var(--trans-accent);
   border: none;

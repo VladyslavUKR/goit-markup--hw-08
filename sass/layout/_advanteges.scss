@@ -1,4 +1,23 @@
-.advantages-main-title {
+.advantages__title {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+// .advantages__list {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// ! ПРИХОВАНИЙ ЗАГОЛОВК
+.advantages__main-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -11,31 +30,24 @@
   overflow: hidden;
 }
 
-.advantages-title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--primary-page-color);
-}
-.advantages-list {
-  display: flex;
-  justify-content: space-between;
-}
+// .advantages__item {
+//   width: 270px;
+// }
 
-.advantages-item {
-  width: 270px;
-}
-
-.advantages-text {
+.advantages__text {
   font-family: var(--primary-page-font);
   font-size: 14px;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
   color: var(--secondary-page-color);
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
-.advantages-svg {
+.advantages__svg-section {
   display: flex;
   justify-content: center;
   align-items: center;
