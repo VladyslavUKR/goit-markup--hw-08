@@ -1,26 +1,36 @@
 @media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/phone/header_phone.jpg');
+    background-color: #2f303a;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    max-width: 1600px;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin: 0 auto;
+  }
 }
 
-.hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../images/phone/header_phone.jpg');
-  background-color: #2f303a;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  max-width: 1600px;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin: 0 auto;
-}
 // !PHONE
 @media screen and (min-device-pixel-ratio: 2) and(max-width: 767px),
   screen and (min-resolution: 192dpi) and(max-width: 767px),
   screen and (min-resolution: 2dppx) and(max-width: 767px) {
   .hero {
     background-image: url('../../images/phone/header_phone@2x.jpg');
+    background-color: #2f303a;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    max-width: 1600px;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin: 0 auto;
   }
 }
 
@@ -37,6 +47,16 @@
   screen and (min-resolution: 2dppx) and(min-width: 768px) {
   .hero {
     background-image: url('../../images/tablet/header_tablet@2x.jpg');
+    background-color: #2f303a;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    max-width: 1600px;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin: 0 auto;
   }
 }
 
@@ -54,6 +74,8 @@
   screen and (min-resolution: 2dppx) and(min-width: 1200px) {
   .hero {
     background-image: url('../../images/desktop/header_desktop@2x.jpg');
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 

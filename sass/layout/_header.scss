@@ -62,9 +62,8 @@
       color: #2196f3;
     }
   }
-
-  .contacts-link {
-    padding-bottom: 10px;
+  .contacts-item:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   .contacts-link__envelope-icon,
