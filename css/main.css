@@ -958,7 +958,7 @@ body {
 }
 
 .subscription__input {
-  width: 450px;
+  max-width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -978,6 +978,11 @@ body {
 @media screen and (max-width: 767px) {
   .subscription__input {
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscription__input {
+    width: 450px;
   }
 }
 

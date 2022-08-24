@@ -129,7 +129,7 @@
 }
 
 .subscription__input {
-  width: 450px;
+  max-width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -152,6 +152,10 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
   }
 }
 
