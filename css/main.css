@@ -96,8 +96,8 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     max-height: 796px;
     background-color: #fff;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
@@ -134,7 +134,7 @@ body {
     margin-bottom: 32px;
   }
   .mobile-menu__pages-item:last-child {
-    margin-bottom: 306px;
+    margin-bottom: 75px;
   }
   .mobile-menu__pages-link {
     font-weight: 500;
@@ -555,7 +555,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     max-width: 480px;
-    max-width: 1600px;
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -569,7 +568,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -765,7 +764,7 @@ body {
   color: var(--secondary-page-color);
 }
 @media screen and (max-width: 767px) {
-  .advantages__text {
+  .advantages__text:not(:last-child) {
     margin-bottom: 30px;
   }
 }

@@ -4,8 +4,8 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     max-height: 796px;
     background-color: #fff;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
@@ -49,7 +49,7 @@
     margin-bottom: 32px;
   }
   .mobile-menu__pages-item:last-child {
-    margin-bottom: 306px;
+    margin-bottom: 75px;
   }
 
   .mobile-menu__pages-link {
