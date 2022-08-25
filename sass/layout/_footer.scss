@@ -101,9 +101,6 @@
   }
 }
 
-.invitation {
-  margin-left: 70px;
-}
 .invitation__title {
   margin-bottom: 20px;
   font-size: 14px;
@@ -130,6 +127,12 @@
   &:focus {
     background-color: var(--accent-page-color);
     border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .invitation {
+    margin-left: 70px;
   }
 }
 

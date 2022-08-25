@@ -149,6 +149,23 @@
   &:hover,
   &:focus {
     color: var(--accent-page-color);
+
+    &:hover::before,
+    &:focus::before {
+      content: '';
+      position: absolute;
+      display: block;
+      transform: translateX(-50%);
+
+      width: 100%;
+      height: 4px;
+
+      bottom: 0;
+      left: 50%;
+
+      border-radius: 2px;
+      background-color: var(--accent-page-color);
+    }
   }
 }
 
@@ -160,20 +177,4 @@
   transition: translate 500ms linear;
 
   color: #2196f3;
-}
-
-.menu__link_current::before {
-  content: '';
-  position: absolute;
-  display: block;
-  transform: translateX(-50%);
-
-  width: 100%;
-  height: 4px;
-
-  bottom: 0;
-  left: 50%;
-
-  border-radius: 2px;
-  background-color: var(--accent-page-color);
 }

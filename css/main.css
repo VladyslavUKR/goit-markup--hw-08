@@ -136,7 +136,7 @@ body {
     margin-bottom: 32px;
   }
   .mobile-menu__pages-item:last-child {
-    margin-bottom: 75px;
+    margin-bottom: 306px;
   }
   .mobile-menu__pages-link {
     font-weight: 500;
@@ -181,6 +181,7 @@ body {
   .mobile-munu__social-list {
     display: flex;
     gap: 10px;
+    align-items: center;
   }
   .mobile-menu__social-item:not(:first-child)::before {
     content: "";
@@ -544,17 +545,7 @@ body {
 .menu__link:hover, .menu__link:focus {
   color: var(--accent-page-color);
 }
-
-.menu__link_current {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  transition: translate 500ms linear;
-  color: #2196f3;
-}
-
-.menu__link_current::before {
+.menu__link:hover:hover::before, .menu__link:hover:focus::before, .menu__link:focus:hover::before, .menu__link:focus:focus::before {
   content: "";
   position: absolute;
   display: block;
@@ -565,6 +556,15 @@ body {
   left: 50%;
   border-radius: 2px;
   background-color: var(--accent-page-color);
+}
+
+.menu__link_current {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  transition: translate 500ms linear;
+  color: #2196f3;
 }
 
 .hero {
@@ -1047,10 +1047,6 @@ body {
     margin-bottom: 60px;
   }
 }
-.invitation {
-  margin-left: 70px;
-}
-
 .invitation__title {
   margin-bottom: 20px;
   font-size: 14px;
@@ -1076,6 +1072,11 @@ body {
   border-radius: 50%;
 }
 
+@media screen and (min-width: 1200px) {
+  .invitation {
+    margin-left: 70px;
+  }
+}
 /*====== footer-form ======*/
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .subscription {
