@@ -11,10 +11,6 @@
     margin-bottom: 10px;
   }
 }
-// .advantages__list {
-//   display: flex;
-//   justify-content: space-between;
-// }
 
 // ! ПРИХОВАНИЙ ЗАГОЛОВК
 .advantages__main-title {
@@ -30,7 +26,7 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -42,9 +38,16 @@
   }
 }
 
-// .advantages__item {
-//   width: 270px;
-// }
+@media screen and (min-width: 1199px) {
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 270px;
+  }
+}
 
 .advantages__text {
   font-family: var(--primary-page-font);
