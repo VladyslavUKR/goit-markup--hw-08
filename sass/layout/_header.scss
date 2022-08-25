@@ -50,9 +50,6 @@
       margin-right: 50px;
     }
   }
-  .contacts-list {
-    margin-left: 84px;
-  }
 
   .contacts-link {
     transition: color var(--trans-accent);
@@ -100,6 +97,10 @@
 
   .contacts-link {
     padding: 10px 10px;
+  }
+
+  .contacts-list {
+    margin-left: 84px;
   }
 
   .header__list {
@@ -152,7 +153,12 @@
 }
 
 .menu__link.link.menu__link_current {
-  color: var(--accent-page-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
 }
 
 .menu__link.link.menu__link_current::before {

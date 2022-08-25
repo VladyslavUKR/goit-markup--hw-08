@@ -30,6 +30,18 @@
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .advantages__item {
+    max-width: 354px;
+  }
+}
+
 // .advantages__item {
 //   width: 270px;
 // }
