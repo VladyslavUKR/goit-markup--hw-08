@@ -152,16 +152,17 @@
   }
 }
 
-.menu__link.link.menu__link_current {
+.menu__link_current {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  transition: translate 500ms linear;
 
   color: #2196f3;
 }
 
-.menu__link.link.menu__link_current::before {
+.menu__link_current::before {
   content: '';
   position: absolute;
   display: block;

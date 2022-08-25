@@ -4,6 +4,10 @@
     justify-content: space-around;
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer__menu {
@@ -15,7 +19,7 @@
 
   @media screen and (min-width: 1200px) {
     justify-content: space-between;
-    align-items: baseline;
+    display: flex;
   }
 }
 
@@ -97,6 +101,9 @@
   }
 }
 
+.invitation {
+  margin-left: 70px;
+}
 .invitation__title {
   margin-bottom: 20px;
   font-size: 14px;
@@ -175,6 +182,10 @@
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 
