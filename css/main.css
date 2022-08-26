@@ -365,6 +365,7 @@ body {
 
 .modal-form-check-desc {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 30px;
   font-weight: 400;
