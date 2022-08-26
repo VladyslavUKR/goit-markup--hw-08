@@ -1132,7 +1132,7 @@ body {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 455px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscription__input {
     width: 450px;
   }
