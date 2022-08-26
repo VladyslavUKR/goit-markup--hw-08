@@ -5,6 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+
+    <!-- Підкл лого сайту -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon_logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon_logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon_logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon_logo/site.webmanifest" />
+    <link rel="mask-icon" href="./images/favicon_logo/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- /Підкл лого сайту -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,7 +68,7 @@
 
         <!-- кнопка відкр. моб. меню -->
         <button type="button" class="mobile-menu-open" data-menu-open>
-          <svg class="mobile-menu-open__icon" width="40" height="40">
+          <svg class="mobile-menu-open__icon" width="24" height="16">
             <use href="./images/sprite.svg.svg#burger"></use>
           </svg>
         </button>
@@ -91,47 +118,48 @@
               <a class="mobile-menu__pages-link link" href="">Контакты</a>
             </li>
           </ul>
+          <div class="mobile-menu__wrapper">
+            <!-- Контакти -->
+            <ul class="mobile-menu__contacts-list header__list">
+              <li class="mobile-menu__contacts-item list">
+                <a
+                  class="mobile-menu__contacts-link mobile-menu__contacts-link_blue link"
+                  href="tel:+380961111111"
+                >
+                  +380961111111</a
+                >
+              </li>
 
-          <!-- Контакти -->
-          <ul class="mobile-menu__contacts-list header__list">
-            <li class="mobile-menu__contacts-item list">
-              <a
-                class="mobile-menu__contacts-link mobile-menu__contacts-link_blue link"
-                href="tel:+380961111111"
-              >
-                +380961111111</a
-              >
-            </li>
-
-            <li class="mobile-menu__contacts-item list">
-              <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com">
-                info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <!-- посилання на соц мережі -->
-          <ul class="mobile-munu__social-list">
-            <li class="mobile-menu__social-item list">
-              <a href="https://www.instagram.com/" class="mobile-menu__social-link link" lang="en"
-                >Instagram</a
-              >
-            </li>
-            <li class="mobile-menu__social-item list">
-              <a href="https://twitter.com/login" class="mobile-menu__social-link link" lang="en"
-                >Twitter</a
-              >
-            </li>
-            <li class="mobile-menu__social-item list">
-              <a href="https://m.facebook.com/" class="mobile-menu__social-link link" lang="en"
-                >Facebook</a
-              >
-            </li>
-            <li class="mobile-menu__social-item list">
-              <a href="https://www.linkedin.com/" class="mobile-menu__social-link link" lang="en"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
+              <li class="mobile-menu__contacts-item list">
+                <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <!-- посилання на соц мережі -->
+            <ul class="mobile-munu__social-list">
+              <li class="mobile-menu__social-item list">
+                <a href="https://www.instagram.com/" class="mobile-menu__social-link link" lang="en"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-menu__social-item list">
+                <a href="https://twitter.com/login" class="mobile-menu__social-link link" lang="en"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-menu__social-item list">
+                <a href="https://m.facebook.com/" class="mobile-menu__social-link link" lang="en"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-menu__social-item list">
+                <a href="https://www.linkedin.com/" class="mobile-menu__social-link link" lang="en"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>

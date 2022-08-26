@@ -67,6 +67,10 @@
     &:focus {
       color: #2196f3;
     }
+
+    @media screen and(min-width: 1200px) {
+      font-size: 14px;
+    }
   }
 
   .contacts-link__envelope-icon,
@@ -95,8 +99,8 @@
     margin-right: 30px;
   }
 
-  .contacts-link {
-    padding: 10px 10px;
+  .contacts-item:first-child {
+    margin-right: 30px;
   }
 
   .contacts-list {

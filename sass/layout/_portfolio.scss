@@ -30,6 +30,10 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .btn-list__button {
@@ -64,7 +68,6 @@
 }
 
 .portfolio-item__container {
-  border: 1px solid #eeeeee;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -90,9 +93,19 @@
 }
 
 .portfolio-item {
+  border: 1px solid #eeeeee;
   max-width: 450px;
   background: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
 }
+
 .portfolio-item__link {
   display: block;
   transition: box-shadow var(--trans-accent);
@@ -125,6 +138,8 @@
 }
 
 .portfolio-item__img {
+  width: 100%;
+
   @media screen and (max-width: 767px) {
     max-width: 450px;
     height: auto;

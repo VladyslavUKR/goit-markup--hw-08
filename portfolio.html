@@ -4,7 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ДЗ3</title>
+    <title>WebStudio</title>
+
+    <!-- Підкл лого сайту -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon_logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon_logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon_logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon_logo/site.webmanifest" />
+    <link rel="mask-icon" href="./images/favicon_logo/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- /Підкл лого сайту -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +44,7 @@
   </head>
   <body>
     <!-- HEADER -->
+
     <header class="header header__border">
       <div class="container header__container">
         <nav class="page-nav">
@@ -27,7 +53,7 @@
           </a>
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link  link" href="./index.html">Студия</a>
+              <a class="menu__link link" href="./index.html">Студия</a>
             </li>
             <li class="menu__item">
               <a class="menu__link menu__link_current link" href="./portfolio.html">Портфолио</a>
@@ -40,7 +66,7 @@
 
         <!-- кнопка відкр. моб. меню -->
         <button type="button" class="mobile-menu-open" data-menu-open>
-          <svg class="mobile-menu-open__icon" width="40" height="40">
+          <svg class="mobile-menu-open__icon" width="24" height="16">
             <use href="./images/sprite.svg.svg#burger"></use>
           </svg>
         </button>
@@ -79,57 +105,59 @@
           <!-- сторінки -->
           <ul class="mobile-menu__pages-list list">
             <li class="mobile-menu__pages-item">
-              <a class="mobile-menu__pages-link link"  href="./index.html">Студия</a
-              >
+              <a class="mobile-menu__pages-link link" href="./index.html">Студия</a>
             </li>
             <li class="mobile-menu__pages-item">
-              <a class="mobile-menu__pages-link mobile-menu--active link" link " href="./portfolio.html">Портфолио</a>
+              <a class="mobile-menu__pages-link mobile-menu--active link" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="mobile-menu__pages-item">
               <a class="mobile-menu__pages-link link" href="">Контакты</a>
             </li>
           </ul>
+          <div class="mobile-menu__wrapper">
+            <!-- Контакти -->
+            <ul class="mobile-menu__contacts-list header__list">
+              <li class="mobile-menu__contacts-item list">
+                <a
+                  class="mobile-menu__contacts-link mobile-menu__contacts-link_blue link"
+                  href="tel:+380961111111"
+                >
+                  +380961111111</a
+                >
+              </li>
 
-          <!-- Контакти -->
-          <ul class="mobile-menu__contacts-list header__list">
-            <li class="mobile-menu__contacts-item list">
-              <a
-                class="mobile-menu__contacts-link mobile-menu__contacts-link_blue link"
-                href="tel:+380961111111"
-              >
-                +380961111111</a
-              >
-            </li>
-
-            <li class="mobile-menu__contacts-item list">
-              <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com">
-                info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <!-- посилання на соц мережі -->
-          <ul class="mobile-munu__social-list">
-            <li class="mobile-menu__social-item list">
-              <a href="https://www.instagram.com/" class="mobile-menu__social-link link" lang="en"
-                >Instagram</a
-              >
-            </li>
-            <li class="mobile-menu__social-item list">
-              <a href="https://twitter.com/login" class="mobile-menu__social-link link" lang="en"
-                >Twitter</a
-              >
-            </li>
-            <li class="mobile-menu__social-item list">
-              <a href="https://m.facebook.com/" class="mobile-menu__social-link link" lang="en"
-                >Facebook</a
-              >
-            </li>
-            <li class="mobile-menu__social-item list">
-              <a href="https://www.linkedin.com/" class="mobile-menu__social-link link" lang="en"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
+              <li class="mobile-menu__contacts-item list">
+                <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <!-- посилання на соц мережі -->
+            <ul class="mobile-munu__social-list">
+              <li class="mobile-menu__social-item list">
+                <a href="https://www.instagram.com/" class="mobile-menu__social-link link" lang="en"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-menu__social-item list">
+                <a href="https://twitter.com/login" class="mobile-menu__social-link link" lang="en"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-menu__social-item list">
+                <a href="https://m.facebook.com/" class="mobile-menu__social-link link" lang="en"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-menu__social-item list">
+                <a href="https://www.linkedin.com/" class="mobile-menu__social-link link" lang="en"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -184,13 +212,14 @@
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/phone/card_phone.jpg 1x, 
-                      ./images/phone/card_phone@2x.jpg 2x"
+                      srcset="./images/phone/card_phone.jpg 1x, ./images/phone/card_phone@2x.jpg 2x"
                       media="(max-width: 767px)"
                     />
-                    <img  class="portfolio-item__img" src="./images/phone/card_phone.jpg" 
-                    
-                    alt="Веб-сайт"  />
+                    <img
+                      class="portfolio-item__img"
+                      src="./images/phone/card_phone.jpg"
+                      alt="Веб-сайт"
+                    />
                   </picture>
                   <p class="portfolio-item__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -232,7 +261,11 @@
                       media="(max-width: 767px)"
                     />
 
-                    <img class="portfolio-item__img" src="./images/phone/card2_phone.jpg" alt="Дизайн" />
+                    <img
+                      class="portfolio-item__img"
+                      src="./images/phone/card2_phone.jpg"
+                      alt="Дизайн"
+                    />
                   </picture>
                   <p class="portfolio-item__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -241,8 +274,10 @@
                   </p>
                 </div>
 
-                 <div class="portfolio-item__container">
-                  <h2 class="portfolio-item__title">Постер<span lang="en">New Orlean vs Golden Star</span></h2>
+                <div class="portfolio-item__container">
+                  <h2 class="portfolio-item__title">
+                    Постер<span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
                   <p class="portfolio-item__text">Приложение</p>
                 </div>
               </a>
@@ -273,7 +308,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img class="portfolio-item__img" src="./images/phone/card3_phone.jpg" alt="Приложение" />
+                    <img
+                      class="portfolio-item__img"
+                      src="./images/phone/card3_phone.jpg"
+                      alt="Приложение"
+                    />
                   </picture>
                   <p class="portfolio-item__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -314,7 +353,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img class="portfolio-item__img" src="./images/phone/card4_phone.jpg" alt="Маркетинг" />
+                    <img
+                      class="portfolio-item__img"
+                      src="./images/phone/card4_phone.jpg"
+                      alt="Маркетинг"
+                    />
                   </picture>
                   <p class="portfolio-item__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -355,7 +398,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img  class="portfolio-item__img" src="./images/phone/card5_phone.jpg" alt="Приложение" />
+                    <img
+                      class="portfolio-item__img"
+                      src="./images/phone/card5_phone.jpg"
+                      alt="Приложение"
+                    />
                   </picture>
                   <p class="portfolio-item__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -396,7 +443,13 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img class="portfolio-item__img" src="./images/phone/card6_phone.jpg" alt="Веб-сайт" width="370" height="294" />
+                    <img
+                      class="portfolio-item__img"
+                      src="./images/phone/card6_phone.jpg"
+                      alt="Веб-сайт"
+                      width="370"
+                      height="294"
+                    />
                   </picture>
                   <p class="portfolio-item__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -437,7 +490,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img class="portfolio-item__img" src="./images/phone/card7_phone.jpg" alt="Дизайн" />
+                    <img
+                      class="portfolio-item__img"
+                      src="./images/phone/card7_phone.jpg"
+                      alt="Дизайн"
+                    />
                   </picture>
                   <p class="portfolio-item__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -480,7 +537,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img  class="portfolio-item__img" src="./images/phone/card8_phone.jpg" alt="Маркетинг"  />
+                    <img
+                      class="portfolio-item__img"
+                      src="./images/phone/card8_phone.jpg"
+                      alt="Маркетинг"
+                    />
                   </picture>
                   <p class="portfolio-item__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -521,7 +582,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img  class="portfolio-item__img" src="./images/phone/card9_phone.jpg" alt="Приложение" />
+                    <img
+                      class="portfolio-item__img"
+                      src="./images/phone/card9_phone.jpg"
+                      alt="Приложение"
+                    />
                   </picture>
                   <p class="portfolio-item__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -543,7 +608,7 @@
 
     <!-- footer -->
 
- <footer class="footer">
+    <footer class="footer">
       <div class="footer__menu container">
         <div class="inform-about-us">
           <div class="footer__inform">

@@ -1,15 +1,12 @@
 .advantages__title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: #212121;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 10px;
-  }
 }
 
 // ! ПРИХОВАНИЙ ЗАГОЛОВК
@@ -24,6 +21,12 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -56,12 +59,6 @@
 
   letter-spacing: 0.03em;
   color: var(--secondary-page-color);
-
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
 }
 
 .advantages__svg-section {
