@@ -105,7 +105,7 @@
 
   font-weight: 400;
   font-size: 12px;
-  line-height: x;
+  line-height: 1.16;
   /* identical to box height */
 
   letter-spacing: 0.03em;
@@ -115,6 +115,10 @@
   color: #757575;
   color: var(--secondary-page-color);
   transition: background-image 2s linear;
+
+  @media screen and (min-width: 320px) and (max-width: 338px) {
+    font-size: 10px;
+  }
 
   &::before {
     content: '';
